@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="index.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Current: <b id="gameflow"></b></h1>
+        <div class="buttons">
+            <h2>Match Found!</h2>
+            <div class="accept-wrapper">
+                <button class="check" id="accept-check">ACCEPT</button>
+            </div>
+            
+            <button class="check" id="decline-check">DECLINE</button>
+        </div>
+        <h2 hidden>Wakelock: <b id="status"></b></h2>
+        <button hidden id="wakeLock">Toggle</button>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
